@@ -81,6 +81,9 @@ namespace LilDrawApp
             this.drawingArea.TabIndex = 1;
             this.drawingArea.TabStop = false;
             this.drawingArea.Click += new System.EventHandler(this.drawingArea_Click);
+            this.drawingArea.MouseDown += new System.Windows.Forms.MouseEventHandler(this.drawingArea_MouseDown);
+            this.drawingArea.MouseMove += new System.Windows.Forms.MouseEventHandler(this.drawingArea_MouseMove);
+            this.drawingArea.MouseUp += new System.Windows.Forms.MouseEventHandler(this.drawingArea_MouseUp);
             // 
             // saveButton
             // 
