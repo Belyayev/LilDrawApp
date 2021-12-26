@@ -16,5 +16,22 @@ namespace LilDrawApp
         {
             InitializeComponent();
         }
+
+        private void fullScreenButton_Click(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
+
+        private void LilDrawForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                FormBorderStyle = FormBorderStyle.Sizable;
+                WindowState = FormWindowState.Normal;
+                TopMost = false;
+            }
+        }
     }
 }

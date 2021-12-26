@@ -7,3 +7,4 @@ C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawAp
 C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.csproj.CoreCompileInputs.cache
 C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.exe
 C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.pdb
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.LilDrawForm.resources
