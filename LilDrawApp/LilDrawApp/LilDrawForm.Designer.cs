@@ -158,6 +158,7 @@ namespace LilDrawApp
             this.button12.Size = new System.Drawing.Size(40, 40);
             this.button12.TabIndex = 11;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button4
             // 
