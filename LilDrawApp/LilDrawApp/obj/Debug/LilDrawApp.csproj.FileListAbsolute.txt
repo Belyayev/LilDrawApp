@@ -1,0 +1,9 @@
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\bin\Debug\LilDrawApp.exe.config
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\bin\Debug\LilDrawApp.exe
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\bin\Debug\LilDrawApp.pdb
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.csproj.AssemblyReference.cache
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.Properties.Resources.resources
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.csproj.GenerateResource.cache
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.csproj.CoreCompileInputs.cache
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.exe
+C:\Users\4xgoo\source\repos\LilDrawApp\LilDrawApp\LilDrawApp\obj\Debug\LilDrawApp.pdb
