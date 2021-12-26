@@ -128,29 +128,48 @@ namespace LilDrawApp
             graphics.Clear(drawingArea.BackColor);
             drawingArea.Image = map;
         }
-        private void button13_Click(object sender, EventArgs e)
+        private void buttonXS_Click(object sender, EventArgs e)
         {
             pen.Width = 1;
+            BrushSizeButtonReset();
+            buttonXS.BackColor = Color.Yellow;
         }
 
         private void buttonS_Click(object sender, EventArgs e)
         {
             pen.Width = 3;
+            BrushSizeButtonReset();
+            buttonS.BackColor = Color.Yellow;
         }
 
         private void buttonM_Click(object sender, EventArgs e)
         {
             pen.Width = 5;
+            BrushSizeButtonReset();
+            buttonM.BackColor = Color.Yellow;
         }
 
         private void buttonL_Click(object sender, EventArgs e)
         {
             pen.Width = 8;
+            BrushSizeButtonReset();
+            buttonL.BackColor = Color.Yellow;
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void buttonXL_Click(object sender, EventArgs e)
         {
             pen.Width = 14;
+            BrushSizeButtonReset();
+            buttonXL.BackColor = Color.Yellow;
+        }
+
+        private void BrushSizeButtonReset()
+        {
+            buttonXS.BackColor = Color.White;
+            buttonS.BackColor = Color.White;
+            buttonM.BackColor = Color.White;
+            buttonL.BackColor = Color.White;
+            buttonXL.BackColor = Color.White;
         }
     }
 }

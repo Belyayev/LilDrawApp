@@ -36,28 +36,28 @@ namespace LilDrawApp
             this.colorSelectPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.buttonsPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonS = new System.Windows.Forms.Button();
-            this.buttonM = new System.Windows.Forms.Button();
+            this.buttonXS = new System.Windows.Forms.Button();
+            this.buttonXL = new System.Windows.Forms.Button();
             this.buttonL = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.buttonM = new System.Windows.Forms.Button();
+            this.buttonS = new System.Windows.Forms.Button();
+            this.buttonsPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).BeginInit();
             this.colorSelectPanel.SuspendLayout();
             this.menuPanel.SuspendLayout();
-            this.buttonsPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.buttonsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // fullScreenButton
@@ -144,18 +144,6 @@ namespace LilDrawApp
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.colorSelect_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Lime;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(250, 10);
-            this.button3.Margin = new System.Windows.Forms.Padding(10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.colorSelect_Click);
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Orange;
@@ -167,18 +155,6 @@ namespace LilDrawApp
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.colorSelect_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Blue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(430, 10);
-            this.button5.Margin = new System.Windows.Forms.Padding(10);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button6
             // 
@@ -192,41 +168,17 @@ namespace LilDrawApp
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.colorSelect_Click);
             // 
-            // button7
+            // button3
             // 
-            this.button7.BackColor = System.Drawing.Color.Black;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(610, 10);
-            this.button7.Margin = new System.Windows.Forms.Padding(10);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 40);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.colorSelect_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Gray;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(550, 10);
-            this.button8.Margin = new System.Windows.Forms.Padding(10);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(40, 40);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.colorSelect_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Purple;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(490, 10);
-            this.button9.Margin = new System.Windows.Forms.Padding(10);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(40, 40);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.colorSelect_Click);
+            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(250, 10);
+            this.button3.Margin = new System.Windows.Forms.Padding(10);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 40);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button10
             // 
@@ -252,6 +204,54 @@ namespace LilDrawApp
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.colorSelect_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Blue;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(430, 10);
+            this.button5.Margin = new System.Windows.Forms.Padding(10);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(40, 40);
+            this.button5.TabIndex = 4;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.colorSelect_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Purple;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(490, 10);
+            this.button9.Margin = new System.Windows.Forms.Padding(10);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(40, 40);
+            this.button9.TabIndex = 8;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.colorSelect_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Gray;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(550, 10);
+            this.button8.Margin = new System.Windows.Forms.Padding(10);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(40, 40);
+            this.button8.TabIndex = 7;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.colorSelect_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Black;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(610, 10);
+            this.button7.Margin = new System.Windows.Forms.Padding(10);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(40, 40);
+            this.button7.TabIndex = 6;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.colorSelect_Click);
+            // 
             // menuPanel
             // 
             this.menuPanel.Controls.Add(this.panel1);
@@ -263,20 +263,10 @@ namespace LilDrawApp
             this.menuPanel.Size = new System.Drawing.Size(1264, 64);
             this.menuPanel.TabIndex = 6;
             // 
-            // buttonsPanel
-            // 
-            this.buttonsPanel.Controls.Add(this.clearButton);
-            this.buttonsPanel.Controls.Add(this.fullScreenButton);
-            this.buttonsPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonsPanel.Location = new System.Drawing.Point(1128, 0);
-            this.buttonsPanel.Name = "buttonsPanel";
-            this.buttonsPanel.Size = new System.Drawing.Size(136, 64);
-            this.buttonsPanel.TabIndex = 6;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.buttonXS);
+            this.panel1.Controls.Add(this.buttonXL);
             this.panel1.Controls.Add(this.buttonL);
             this.panel1.Controls.Add(this.buttonM);
             this.panel1.Controls.Add(this.buttonS);
@@ -286,55 +276,75 @@ namespace LilDrawApp
             this.panel1.Size = new System.Drawing.Size(462, 64);
             this.panel1.TabIndex = 7;
             // 
-            // buttonS
+            // buttonXS
             // 
-            this.buttonS.Location = new System.Drawing.Point(93, 13);
-            this.buttonS.Name = "buttonS";
-            this.buttonS.Size = new System.Drawing.Size(62, 40);
-            this.buttonS.TabIndex = 0;
-            this.buttonS.Text = "S";
-            this.buttonS.UseVisualStyleBackColor = true;
-            this.buttonS.Click += new System.EventHandler(this.buttonS_Click);
+            this.buttonXS.BackColor = System.Drawing.Color.White;
+            this.buttonXS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXS.Location = new System.Drawing.Point(21, 13);
+            this.buttonXS.Name = "buttonXS";
+            this.buttonXS.Size = new System.Drawing.Size(62, 40);
+            this.buttonXS.TabIndex = 4;
+            this.buttonXS.Text = "XS";
+            this.buttonXS.UseVisualStyleBackColor = false;
+            this.buttonXS.Click += new System.EventHandler(this.buttonXS_Click);
             // 
-            // buttonM
+            // buttonXL
             // 
-            this.buttonM.Location = new System.Drawing.Point(165, 13);
-            this.buttonM.Name = "buttonM";
-            this.buttonM.Size = new System.Drawing.Size(62, 40);
-            this.buttonM.TabIndex = 1;
-            this.buttonM.Text = "M";
-            this.buttonM.UseVisualStyleBackColor = true;
-            this.buttonM.Click += new System.EventHandler(this.buttonM_Click);
+            this.buttonXL.BackColor = System.Drawing.Color.White;
+            this.buttonXL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXL.Location = new System.Drawing.Point(311, 13);
+            this.buttonXL.Name = "buttonXL";
+            this.buttonXL.Size = new System.Drawing.Size(62, 40);
+            this.buttonXL.TabIndex = 3;
+            this.buttonXL.Text = "XL";
+            this.buttonXL.UseVisualStyleBackColor = false;
+            this.buttonXL.Click += new System.EventHandler(this.buttonXL_Click);
             // 
             // buttonL
             // 
+            this.buttonL.BackColor = System.Drawing.Color.White;
+            this.buttonL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonL.Location = new System.Drawing.Point(237, 13);
             this.buttonL.Name = "buttonL";
             this.buttonL.Size = new System.Drawing.Size(64, 40);
             this.buttonL.TabIndex = 2;
             this.buttonL.Text = "L";
-            this.buttonL.UseVisualStyleBackColor = true;
+            this.buttonL.UseVisualStyleBackColor = false;
             this.buttonL.Click += new System.EventHandler(this.buttonL_Click);
             // 
-            // button12
+            // buttonM
             // 
-            this.button12.Location = new System.Drawing.Point(311, 13);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(62, 40);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "XL";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.buttonM.BackColor = System.Drawing.Color.White;
+            this.buttonM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonM.Location = new System.Drawing.Point(165, 13);
+            this.buttonM.Name = "buttonM";
+            this.buttonM.Size = new System.Drawing.Size(62, 40);
+            this.buttonM.TabIndex = 1;
+            this.buttonM.Text = "M";
+            this.buttonM.UseVisualStyleBackColor = false;
+            this.buttonM.Click += new System.EventHandler(this.buttonM_Click);
             // 
-            // button13
+            // buttonS
             // 
-            this.button13.Location = new System.Drawing.Point(21, 13);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(62, 40);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "XS";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.buttonS.BackColor = System.Drawing.Color.White;
+            this.buttonS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonS.Location = new System.Drawing.Point(93, 13);
+            this.buttonS.Name = "buttonS";
+            this.buttonS.Size = new System.Drawing.Size(62, 40);
+            this.buttonS.TabIndex = 0;
+            this.buttonS.Text = "S";
+            this.buttonS.UseVisualStyleBackColor = false;
+            this.buttonS.Click += new System.EventHandler(this.buttonS_Click);
+            // 
+            // buttonsPanel
+            // 
+            this.buttonsPanel.Controls.Add(this.clearButton);
+            this.buttonsPanel.Controls.Add(this.fullScreenButton);
+            this.buttonsPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonsPanel.Location = new System.Drawing.Point(1128, 0);
+            this.buttonsPanel.Name = "buttonsPanel";
+            this.buttonsPanel.Size = new System.Drawing.Size(136, 64);
+            this.buttonsPanel.TabIndex = 6;
             // 
             // LilDrawForm
             // 
@@ -353,8 +363,8 @@ namespace LilDrawApp
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).EndInit();
             this.colorSelectPanel.ResumeLayout(false);
             this.menuPanel.ResumeLayout(false);
-            this.buttonsPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.buttonsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,8 +393,8 @@ namespace LilDrawApp
         private System.Windows.Forms.Button buttonL;
         private System.Windows.Forms.Button buttonM;
         private System.Windows.Forms.Button buttonS;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button buttonXS;
+        private System.Windows.Forms.Button buttonXL;
     }
 }
 
