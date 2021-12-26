@@ -108,7 +108,7 @@ namespace LilDrawApp
 
         private void drawingArea_MouseMove(object sender, MouseEventArgs e)
         {
-            if(isMouse) { return; }
+            if(!isMouse) { return; }
             arrayPoints.SetPoint(e.X, e.Y);
             if(arrayPoints.GetCountPoints() >= 2)
             {
