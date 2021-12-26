@@ -123,36 +123,34 @@ namespace LilDrawApp
             pen.Color = ((Button)sender).BackColor;
         }
 
-        private void palletteButton_Click(object sender, EventArgs e)
-        {
-            if(colorDialog.ShowDialog() == DialogResult.OK)
-            {
-                pen.Color = colorDialog.Color;
-                ((Button)sender).BackColor = colorDialog.Color;
-            }
-        }
-
         private void clearButton_Click(object sender, EventArgs e)
         {
             graphics.Clear(drawingArea.BackColor);
             drawingArea.Image = map;
         }
-
-        private void brushThicknessBar_ValueChanged(object sender, EventArgs e)
+        private void button13_Click(object sender, EventArgs e)
         {
-            pen.Width = brushThicknessBar.Value;
+            pen.Width = 1;
         }
 
-        private void saveButton_Click(object sender, EventArgs e)
+        private void buttonS_Click(object sender, EventArgs e)
         {
-            saveFileDialog.Filter = "JPG(*.JPG)|*.jpg";
-            if(saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                if(drawingArea.Image != null)
-                {
-                    drawingArea.Image.Save(saveFileDialog.FileName);
-                }
-            }
+            pen.Width = 3;
+        }
+
+        private void buttonM_Click(object sender, EventArgs e)
+        {
+            pen.Width = 5;
+        }
+
+        private void buttonL_Click(object sender, EventArgs e)
+        {
+            pen.Width = 8;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            pen.Width = 14;
         }
     }
 }

@@ -32,7 +32,6 @@ namespace LilDrawApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LilDrawForm));
             this.fullScreenButton = new System.Windows.Forms.Button();
             this.drawingArea = new System.Windows.Forms.PictureBox();
-            this.saveButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.colorSelectPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,20 +45,19 @@ namespace LilDrawApp
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.palletteButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.brushThicknessBar = new System.Windows.Forms.TrackBar();
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.colorDialog = new System.Windows.Forms.ColorDialog();
-            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.buttonsPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonS = new System.Windows.Forms.Button();
+            this.buttonM = new System.Windows.Forms.Button();
+            this.buttonL = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).BeginInit();
             this.colorSelectPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brushThicknessBar)).BeginInit();
             this.menuPanel.SuspendLayout();
             this.buttonsPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // fullScreenButton
@@ -67,7 +65,7 @@ namespace LilDrawApp
             this.fullScreenButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.fullScreenButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fullScreenButton.BackgroundImage")));
             this.fullScreenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fullScreenButton.Location = new System.Drawing.Point(220, 5);
+            this.fullScreenButton.Location = new System.Drawing.Point(78, 7);
             this.fullScreenButton.Margin = new System.Windows.Forms.Padding(6);
             this.fullScreenButton.Name = "fullScreenButton";
             this.fullScreenButton.Size = new System.Drawing.Size(50, 50);
@@ -91,25 +89,15 @@ namespace LilDrawApp
             this.drawingArea.MouseMove += new System.Windows.Forms.MouseEventHandler(this.drawingArea_MouseMove);
             this.drawingArea.MouseUp += new System.Windows.Forms.MouseEventHandler(this.drawingArea_MouseUp);
             // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.Location = new System.Drawing.Point(129, 5);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 39);
-            this.saveButton.TabIndex = 2;
-            this.saveButton.Text = "save";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
             // clearButton
             // 
             this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.clearButton.Location = new System.Drawing.Point(34, 5);
+            this.clearButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("clearButton.BackgroundImage")));
+            this.clearButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clearButton.Location = new System.Drawing.Point(19, 7);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 39);
+            this.clearButton.Size = new System.Drawing.Size(50, 50);
             this.clearButton.TabIndex = 3;
-            this.clearButton.Text = "clear";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -126,11 +114,10 @@ namespace LilDrawApp
             this.colorSelectPanel.Controls.Add(this.button9);
             this.colorSelectPanel.Controls.Add(this.button8);
             this.colorSelectPanel.Controls.Add(this.button7);
-            this.colorSelectPanel.Controls.Add(this.palletteButton);
             this.colorSelectPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.colorSelectPanel.Location = new System.Drawing.Point(0, 0);
             this.colorSelectPanel.Name = "colorSelectPanel";
-            this.colorSelectPanel.Size = new System.Drawing.Size(957, 62);
+            this.colorSelectPanel.Size = new System.Drawing.Size(666, 64);
             this.colorSelectPanel.TabIndex = 4;
             // 
             // button1
@@ -265,68 +252,89 @@ namespace LilDrawApp
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.colorSelect_Click);
             // 
-            // palletteButton
-            // 
-            this.palletteButton.BackColor = System.Drawing.SystemColors.Control;
-            this.palletteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.palletteButton.Location = new System.Drawing.Point(670, 10);
-            this.palletteButton.Margin = new System.Windows.Forms.Padding(10);
-            this.palletteButton.Name = "palletteButton";
-            this.palletteButton.Size = new System.Drawing.Size(40, 40);
-            this.palletteButton.TabIndex = 11;
-            this.palletteButton.UseVisualStyleBackColor = false;
-            this.palletteButton.Click += new System.EventHandler(this.palletteButton_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.brushThicknessBar);
-            this.panel1.Location = new System.Drawing.Point(9, 154);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(97, 85);
-            this.panel1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Thickness";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // brushThicknessBar
-            // 
-            this.brushThicknessBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.brushThicknessBar.Location = new System.Drawing.Point(0, 40);
-            this.brushThicknessBar.Name = "brushThicknessBar";
-            this.brushThicknessBar.Size = new System.Drawing.Size(97, 45);
-            this.brushThicknessBar.TabIndex = 0;
-            this.brushThicknessBar.ValueChanged += new System.EventHandler(this.brushThicknessBar_ValueChanged);
-            // 
             // menuPanel
             // 
+            this.menuPanel.Controls.Add(this.panel1);
             this.menuPanel.Controls.Add(this.buttonsPanel);
             this.menuPanel.Controls.Add(this.colorSelectPanel);
-            this.menuPanel.Controls.Add(this.panel1);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.menuPanel.Location = new System.Drawing.Point(0, 923);
+            this.menuPanel.Location = new System.Drawing.Point(0, 921);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(1264, 62);
+            this.menuPanel.Size = new System.Drawing.Size(1264, 64);
             this.menuPanel.TabIndex = 6;
             // 
             // buttonsPanel
             // 
             this.buttonsPanel.Controls.Add(this.clearButton);
-            this.buttonsPanel.Controls.Add(this.saveButton);
             this.buttonsPanel.Controls.Add(this.fullScreenButton);
             this.buttonsPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonsPanel.Location = new System.Drawing.Point(986, 0);
+            this.buttonsPanel.Location = new System.Drawing.Point(1128, 0);
             this.buttonsPanel.Name = "buttonsPanel";
-            this.buttonsPanel.Size = new System.Drawing.Size(278, 62);
+            this.buttonsPanel.Size = new System.Drawing.Size(136, 64);
             this.buttonsPanel.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.buttonL);
+            this.panel1.Controls.Add(this.buttonM);
+            this.panel1.Controls.Add(this.buttonS);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(666, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(462, 64);
+            this.panel1.TabIndex = 7;
+            // 
+            // buttonS
+            // 
+            this.buttonS.Location = new System.Drawing.Point(93, 13);
+            this.buttonS.Name = "buttonS";
+            this.buttonS.Size = new System.Drawing.Size(62, 40);
+            this.buttonS.TabIndex = 0;
+            this.buttonS.Text = "S";
+            this.buttonS.UseVisualStyleBackColor = true;
+            this.buttonS.Click += new System.EventHandler(this.buttonS_Click);
+            // 
+            // buttonM
+            // 
+            this.buttonM.Location = new System.Drawing.Point(165, 13);
+            this.buttonM.Name = "buttonM";
+            this.buttonM.Size = new System.Drawing.Size(62, 40);
+            this.buttonM.TabIndex = 1;
+            this.buttonM.Text = "M";
+            this.buttonM.UseVisualStyleBackColor = true;
+            this.buttonM.Click += new System.EventHandler(this.buttonM_Click);
+            // 
+            // buttonL
+            // 
+            this.buttonL.Location = new System.Drawing.Point(237, 13);
+            this.buttonL.Name = "buttonL";
+            this.buttonL.Size = new System.Drawing.Size(64, 40);
+            this.buttonL.TabIndex = 2;
+            this.buttonL.Text = "L";
+            this.buttonL.UseVisualStyleBackColor = true;
+            this.buttonL.Click += new System.EventHandler(this.buttonL_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(311, 13);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(62, 40);
+            this.button12.TabIndex = 3;
+            this.button12.Text = "XL";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(21, 13);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(62, 40);
+            this.button13.TabIndex = 4;
+            this.button13.Text = "XS";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // LilDrawForm
             // 
@@ -344,11 +352,9 @@ namespace LilDrawApp
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LilDrawForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).EndInit();
             this.colorSelectPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brushThicknessBar)).EndInit();
             this.menuPanel.ResumeLayout(false);
             this.buttonsPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,7 +364,6 @@ namespace LilDrawApp
 
         private System.Windows.Forms.Button fullScreenButton;
         private System.Windows.Forms.PictureBox drawingArea;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.FlowLayoutPanel colorSelectPanel;
         private System.Windows.Forms.Button button1;
@@ -372,14 +377,14 @@ namespace LilDrawApp
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button palletteButton;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TrackBar brushThicknessBar;
         private System.Windows.Forms.Panel menuPanel;
-        private System.Windows.Forms.ColorDialog colorDialog;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.Panel buttonsPanel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonL;
+        private System.Windows.Forms.Button buttonM;
+        private System.Windows.Forms.Button buttonS;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
     }
 }
 
