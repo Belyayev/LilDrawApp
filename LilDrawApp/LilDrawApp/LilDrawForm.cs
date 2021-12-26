@@ -33,5 +33,10 @@ namespace LilDrawApp
                 TopMost = false;
             }
         }
+
+        private void drawingArea_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
