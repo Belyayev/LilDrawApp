@@ -89,6 +89,9 @@ namespace LilDrawApp
             Rectangle rectangle = Screen.PrimaryScreen.Bounds;
             map = new Bitmap(rectangle.Width, rectangle.Height);
             graphics = Graphics.FromImage(map);
+
+            pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
         }
 
         private void drawingArea_MouseDown(object sender, MouseEventArgs e)
@@ -113,6 +116,11 @@ namespace LilDrawApp
                 drawingArea.Image = map;
                 arrayPoints.SetPoint(e.X, e.Y);
             }
+        }
+
+        private void colorSelect_Click(object sender, EventArgs e)
+        {
+            pen.Color = ((Button)sender).BackColor;
         }
     }
 }

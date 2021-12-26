@@ -46,14 +46,16 @@ namespace LilDrawApp
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.palletteButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).BeginInit();
             this.colorSelectPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // fullScreenButton
@@ -61,10 +63,10 @@ namespace LilDrawApp
             this.fullScreenButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.fullScreenButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fullScreenButton.BackgroundImage")));
             this.fullScreenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fullScreenButton.Location = new System.Drawing.Point(542, 352);
+            this.fullScreenButton.Location = new System.Drawing.Point(27, 386);
             this.fullScreenButton.Margin = new System.Windows.Forms.Padding(6);
             this.fullScreenButton.Name = "fullScreenButton";
-            this.fullScreenButton.Size = new System.Drawing.Size(73, 74);
+            this.fullScreenButton.Size = new System.Drawing.Size(42, 40);
             this.fullScreenButton.TabIndex = 0;
             this.fullScreenButton.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.fullScreenButton.UseVisualStyleBackColor = true;
@@ -73,10 +75,10 @@ namespace LilDrawApp
             // drawingArea
             // 
             this.drawingArea.BackColor = System.Drawing.Color.White;
-            this.drawingArea.Dock = System.Windows.Forms.DockStyle.Left;
+            this.drawingArea.Dock = System.Windows.Forms.DockStyle.Fill;
             this.drawingArea.Location = new System.Drawing.Point(0, 0);
             this.drawingArea.Name = "drawingArea";
-            this.drawingArea.Size = new System.Drawing.Size(520, 441);
+            this.drawingArea.Size = new System.Drawing.Size(630, 441);
             this.drawingArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.drawingArea.TabIndex = 1;
             this.drawingArea.TabStop = false;
@@ -88,7 +90,7 @@ namespace LilDrawApp
             // saveButton
             // 
             this.saveButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.saveButton.Location = new System.Drawing.Point(540, 304);
+            this.saveButton.Location = new System.Drawing.Point(13, 338);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 39);
             this.saveButton.TabIndex = 2;
@@ -98,7 +100,7 @@ namespace LilDrawApp
             // clearButton
             // 
             this.clearButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.clearButton.Location = new System.Drawing.Point(540, 250);
+            this.clearButton.Location = new System.Drawing.Point(13, 293);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 39);
             this.clearButton.TabIndex = 3;
@@ -118,11 +120,11 @@ namespace LilDrawApp
             this.colorSelectPanel.Controls.Add(this.button9);
             this.colorSelectPanel.Controls.Add(this.button10);
             this.colorSelectPanel.Controls.Add(this.button11);
-            this.colorSelectPanel.Controls.Add(this.button12);
+            this.colorSelectPanel.Controls.Add(this.palletteButton);
             this.colorSelectPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.colorSelectPanel.Location = new System.Drawing.Point(520, 0);
+            this.colorSelectPanel.Location = new System.Drawing.Point(0, 0);
             this.colorSelectPanel.Name = "colorSelectPanel";
-            this.colorSelectPanel.Size = new System.Drawing.Size(110, 147);
+            this.colorSelectPanel.Size = new System.Drawing.Size(109, 148);
             this.colorSelectPanel.TabIndex = 4;
             // 
             // button1
@@ -134,6 +136,7 @@ namespace LilDrawApp
             this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button2
             // 
@@ -144,6 +147,7 @@ namespace LilDrawApp
             this.button2.Size = new System.Drawing.Size(30, 30);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button3
             // 
@@ -154,6 +158,7 @@ namespace LilDrawApp
             this.button3.Size = new System.Drawing.Size(30, 30);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button4
             // 
@@ -164,6 +169,7 @@ namespace LilDrawApp
             this.button4.Size = new System.Drawing.Size(30, 30);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button5
             // 
@@ -174,6 +180,7 @@ namespace LilDrawApp
             this.button5.Size = new System.Drawing.Size(30, 30);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button6
             // 
@@ -184,6 +191,7 @@ namespace LilDrawApp
             this.button6.Size = new System.Drawing.Size(30, 30);
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button7
             // 
@@ -194,6 +202,7 @@ namespace LilDrawApp
             this.button7.Size = new System.Drawing.Size(30, 30);
             this.button7.TabIndex = 6;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button8
             // 
@@ -204,6 +213,7 @@ namespace LilDrawApp
             this.button8.Size = new System.Drawing.Size(30, 30);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button9
             // 
@@ -214,6 +224,7 @@ namespace LilDrawApp
             this.button9.Size = new System.Drawing.Size(30, 30);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button10
             // 
@@ -224,6 +235,7 @@ namespace LilDrawApp
             this.button10.Size = new System.Drawing.Size(30, 30);
             this.button10.TabIndex = 9;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.colorSelect_Click);
             // 
             // button11
             // 
@@ -234,34 +246,26 @@ namespace LilDrawApp
             this.button11.Size = new System.Drawing.Size(30, 30);
             this.button11.TabIndex = 10;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.colorSelect_Click);
             // 
-            // button12
+            // palletteButton
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.Control;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(75, 111);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(30, 30);
-            this.button12.TabIndex = 11;
-            this.button12.UseVisualStyleBackColor = false;
+            this.palletteButton.BackColor = System.Drawing.SystemColors.Control;
+            this.palletteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.palletteButton.Location = new System.Drawing.Point(75, 111);
+            this.palletteButton.Name = "palletteButton";
+            this.palletteButton.Size = new System.Drawing.Size(30, 30);
+            this.palletteButton.TabIndex = 11;
+            this.palletteButton.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.trackBar1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(520, 147);
+            this.panel1.Location = new System.Drawing.Point(9, 154);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 85);
+            this.panel1.Size = new System.Drawing.Size(97, 85);
             this.panel1.TabIndex = 5;
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.trackBar1.Location = new System.Drawing.Point(0, 40);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(110, 45);
-            this.trackBar1.TabIndex = 0;
             // 
             // label1
             // 
@@ -274,17 +278,34 @@ namespace LilDrawApp
             this.label1.Text = "Thickness";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.trackBar1.Location = new System.Drawing.Point(0, 40);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(97, 45);
+            this.trackBar1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.colorSelectPanel);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.fullScreenButton);
+            this.panel2.Controls.Add(this.saveButton);
+            this.panel2.Controls.Add(this.clearButton);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(521, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(109, 441);
+            this.panel2.TabIndex = 6;
+            // 
             // LilDrawForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(630, 441);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.colorSelectPanel);
-            this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.drawingArea);
-            this.Controls.Add(this.fullScreenButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -297,6 +318,7 @@ namespace LilDrawApp
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,10 +342,11 @@ namespace LilDrawApp
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button palletteButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
