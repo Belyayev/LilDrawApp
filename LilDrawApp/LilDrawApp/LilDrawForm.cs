@@ -60,6 +60,8 @@ namespace LilDrawApp
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             TopMost = true;
+            escButton.Visible = true;
+            fullScreenButton.Visible = false;
         }
 
         private void LilDrawForm_KeyDown(object sender, KeyEventArgs e)
@@ -69,6 +71,8 @@ namespace LilDrawApp
                 FormBorderStyle = FormBorderStyle.Sizable;
                 WindowState = FormWindowState.Normal;
                 TopMost = false;
+                escButton.Visible = false;
+                fullScreenButton.Visible = true;
             }
         }
 
@@ -121,6 +125,7 @@ namespace LilDrawApp
         private void colorSelect_Click(object sender, EventArgs e)
         {
             pen.Color = ((Button)sender).BackColor;
+            
         }
 
         private void clearButton_Click(object sender, EventArgs e)
@@ -171,5 +176,6 @@ namespace LilDrawApp
             buttonL.BackColor = Color.White;
             buttonXL.BackColor = Color.White;
         }
+
     }
 }
