@@ -49,13 +49,14 @@ namespace LilDrawApp
             this.palletteButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.brushThicknessBar = new System.Windows.Forms.TrackBar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).BeginInit();
             this.colorSelectPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brushThicknessBar)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,6 +98,7 @@ namespace LilDrawApp
             this.saveButton.TabIndex = 2;
             this.saveButton.Text = "save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // clearButton
             // 
@@ -264,7 +266,7 @@ namespace LilDrawApp
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.trackBar1);
+            this.panel1.Controls.Add(this.brushThicknessBar);
             this.panel1.Location = new System.Drawing.Point(9, 154);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(97, 85);
@@ -281,13 +283,14 @@ namespace LilDrawApp
             this.label1.Text = "Thickness";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // trackBar1
+            // brushThicknessBar
             // 
-            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.trackBar1.Location = new System.Drawing.Point(0, 40);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(97, 45);
-            this.trackBar1.TabIndex = 0;
+            this.brushThicknessBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.brushThicknessBar.Location = new System.Drawing.Point(0, 40);
+            this.brushThicknessBar.Name = "brushThicknessBar";
+            this.brushThicknessBar.Size = new System.Drawing.Size(97, 45);
+            this.brushThicknessBar.TabIndex = 0;
+            this.brushThicknessBar.ValueChanged += new System.EventHandler(this.brushThicknessBar_ValueChanged);
             // 
             // panel2
             // 
@@ -320,7 +323,7 @@ namespace LilDrawApp
             this.colorSelectPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brushThicknessBar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -348,9 +351,10 @@ namespace LilDrawApp
         private System.Windows.Forms.Button palletteButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar brushThicknessBar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 
