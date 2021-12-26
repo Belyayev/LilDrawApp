@@ -51,6 +51,7 @@ namespace LilDrawApp
             this.label1 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.drawingArea)).BeginInit();
             this.colorSelectPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -106,6 +107,7 @@ namespace LilDrawApp
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // colorSelectPanel
             // 
@@ -257,6 +259,7 @@ namespace LilDrawApp
             this.palletteButton.Size = new System.Drawing.Size(30, 30);
             this.palletteButton.TabIndex = 11;
             this.palletteButton.UseVisualStyleBackColor = false;
+            this.palletteButton.Click += new System.EventHandler(this.palletteButton_Click);
             // 
             // panel1
             // 
@@ -347,6 +350,7 @@ namespace LilDrawApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ColorDialog colorDialog;
     }
 }
 

@@ -122,5 +122,20 @@ namespace LilDrawApp
         {
             pen.Color = ((Button)sender).BackColor;
         }
+
+        private void palletteButton_Click(object sender, EventArgs e)
+        {
+            if(colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                pen.Color = colorDialog.Color;
+                ((Button)sender).BackColor = colorDialog.Color;
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            graphics.Clear(drawingArea.BackColor);
+            drawingArea.Image = map;
+        }
     }
 }
